@@ -152,11 +152,10 @@ void printTailToHead(list_t *list){
     else{
         node_t *tmp;
         tmp=list->tail;
-        while(tmp->next!=NULL){
+        while(tmp!=NULL){
             printf("%f\n", tmp->value);
             tmp=tmp->next;
         }
-        printf("%f\n", tmp->value);
     }
 }
 
@@ -165,11 +164,10 @@ void printHeadToTail(list_t *list){
     else{
         node_t *tmp;
         tmp=list->head;
-        while(tmp->prev!=NULL){
+        while(tmp!=NULL){
             printf("%f\n", tmp->value);
             tmp=tmp->prev;
         }
-        printf("%f\n", tmp->value);
     }
 }
 
