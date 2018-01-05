@@ -37,6 +37,7 @@ void *typeAlloc(type Type){
         case 6: return malloc(sizeof(double)); break;
         case 7: return malloc(sizeof(long double)); break;
     }
+    return NULL;
 }
 
 void getValue(type Type, void *a, node_t *Node){
