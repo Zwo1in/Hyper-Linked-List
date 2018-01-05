@@ -59,3 +59,5 @@ void printTail(list_t list);
 int isEmpty(list_t list);
     
 void empty(list_t *list);
+
+#endif
