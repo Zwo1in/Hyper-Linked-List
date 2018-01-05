@@ -31,7 +31,6 @@ void printValue(node_t Node){
         case 6: printf("%f\n", *(double*)Node.value); break;
         case 7: printf("%Lf\n", *(long double*)Node.value); break;
     }
-    return NULL;
 }
 
 void init(list_t *list){
